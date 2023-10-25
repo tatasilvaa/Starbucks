@@ -1,0 +1,74 @@
+body
+{
+    margin: 0px;
+}
+
+.container .linha
+{
+    background: rgb(2, 115, 64);
+    height: 10px;
+}
+
+.container header
+{
+    height: 100px;
+    display:flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0px 100px;
+}
+
+.container header .logo
+{
+    width: 64px;
+    height: 64px;
+}
+
+.container header .menu
+{
+    width: 24px;
+    height: 24px;
+    padding-left: 20px;
+}
+
+.container header .input
+{
+    background-color: rgba(255, 255, 255, 0);
+    border: 1px solid gray;
+    width: 200px;
+    height: 18px;
+    padding: 10px 13px;
+    font-size: 18px;
+    outline: none;
+}
+
+@media(max-width:550px)
+{
+
+    .container header .input
+    {
+        width: 120px;
+    }
+
+    .container header
+    {
+        padding: 0px 80px;
+    }
+
+}
+
+@media(max-width:450px)
+{
+
+    .container header .input
+    {
+        width: 90px;
+    }
+
+    .container header
+    {
+        padding: 0px 40px;
+    }
+
+}
