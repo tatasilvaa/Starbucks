@@ -3,72 +3,94 @@ body
     margin: 0px;
 }
 
-.container .linha
+.header_linha
 {
-    background: rgb(2, 115, 64);
+    background-color: rgb(2, 115, 64);
     height: 10px;
 }
 
-.container header
+.header_container
 {
     height: 100px;
-    display:flex;
+    display: flex;
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
     padding: 0px 100px;
 }
 
-.container header .logo
+.header_container_left
 {
-    width: 64px;
-    height: 64px;
+    cursor: pointer;
+    padding-right: 20px;
 }
 
-.container header .menu
+.header_container_right
 {
-    width: 24px;
-    height: 24px;
-    padding-left: 20px;
+    display: flex;
+    flex-direction: row;
 }
 
-.container header .input
+.header_container_right_caixa
 {
-    background-color: rgba(255, 255, 255, 0);
-    border: 1px solid gray;
-    width: 200px;
-    height: 18px;
-    padding: 10px 13px;
-    font-size: 18px;
+    padding-right: 30px;
+}
+
+.header_container_right_search
+{
+    border: 1px solid rgba(128, 128, 128, 0.684);
+    height: 37px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.header_container_right_input
+{
+    background-color: rgba(0, 0, 0, 0);
+    border: 1px solid rgba(0, 0, 0, 0);
     outline: none;
+    width: 170px;
+    cursor: pointer;
+    padding-left: 10px;
+    font-size: 18px;
 }
 
-@media(max-width:550px)
+.header_container_right_loupe
 {
-
-    .container header .input
-    {
-        width: 120px;
-    }
-
-    .container header
-    {
-        padding: 0px 80px;
-    }
-
+    cursor: pointer;
+    padding-right: 10px;
 }
 
-@media(max-width:450px)
+.header_container_right_menu
 {
+    cursor: pointer;
+    margin-top: 5px;
+}
 
-    .container header .input
+@media(max-width:510px)
+{
+    .header_container_right_input
     {
-        width: 90px;
+        width: 130px;
     }
 
-    .container header
+    .header_container
     {
-        padding: 0px 40px;
+        padding: 0px 90px;
+    }
+}
+
+@media(max-width:455px)
+{
+    .header_container_right_input
+    {
+        width: 90px
+    }
+
+    .header_container
+    {
+        padding: 0px 30px;
     }
 
 }
